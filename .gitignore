@@ -1,0 +1,54 @@
+# Config - čuvamo konfiguraciju van repozitorijuma
+/config/database.php
+/config/*.local.php
+/config/local/
+
+# Osetljivi fajlovi - nikad ne delimo na GitHub-u
+.env
+*.env
+.env.local
+.env.*.local
+
+# Logovi - nije ih potrebno čuvati u repozitorijumu
+*.log
+logs/
+/logs/
+
+# Privremeni fajlovi - generišu se tokom rada
+tmp/
+temp/
+/tmp/
+/temp/
+
+# OS generisani fajlovi - neprijatelji svakog repozitorijuma
+.DS_Store
+Thumbs.db
+desktop.ini
+._*
+
+# Editor fajlovi - zavise od tvog setup-a
+.vscode/
+.idea/
+*.sublime-*
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Kompozere (ako ga koristiš u budućnosti)
+/vendor/
+composer.lock
+composer.phar
+
+# PHP specifično - greške i keš
+*.cache
+*.error
+error_log
+
+# Projektno specifično - ako želiš da sačuvaš strukturu ali ne i sadržaj
+/css/*.map
+/node_modules/
+
+# Test fajlovi - ne trebaju na produkciji
+phpunit.xml
+.phpunit.result.cache
